@@ -1,0 +1,53 @@
+package com.users.entity;
+
+import java.util.List;
+
+public class User {
+    private Long userId;
+    private String name;
+    private String phone;
+
+    // This will hold data from Contact service
+    private List<?> contacts;
+
+    public User() {}
+
+    public User(Long userId, String name, String phone) {
+        this.userId = userId;
+        this.name = name;
+        this.phone = phone;
+    }
+
+    // Getters and Setters
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public List<?> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(List<?> contacts) {
+        this.contacts = contacts;
+    }
+}
